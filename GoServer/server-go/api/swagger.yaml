@@ -1,0 +1,610 @@
+openapi: 3.0.1
+info:
+  title: dev-serverless-slack-bot
+  version: 2022-11-30T03:41:31Z
+servers:
+- url: "https://b4jnyl4uyb.execute-api.eu-north-1.amazonaws.com/{basePath}"
+  variables:
+    basePath:
+      default: /dev
+paths:
+  /api/messages:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /auth/slack/callback:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /authy:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /sendMessage:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /updateWorkspace:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /slackMessages:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /disconnect:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /history:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /notification:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /auth/teams:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /pollResponse:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /ooo:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /polls:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /away:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /standup:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /webNotification:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /slackNotifications:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /webPoll:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /slack/actions:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /slack/events:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /updateStatus:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /addleave:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /delTemplate:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /help:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /success:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+  /upcomingLeaves:
+    options:
+      responses:
+        "200":
+          description: 200 response
+          headers:
+            Access-Control-Allow-Origin:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Methods:
+              style: simple
+              explode: false
+              schema:
+                type: string
+            Access-Control-Allow-Headers:
+              style: simple
+              explode: false
+              schema:
+                type: string
+          content: {}
+    x-amazon-apigateway-any-method: {}
+components:
+  schemas: {}
